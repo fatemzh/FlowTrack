@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const LoginPage: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/login`, { email, password });
-      localStorage.setItem('token', response.data.token);
-      alert('Login successful');
+      console.log('Sending login request');
+      const response = await axios.post('http://localhost:3000/login', { email, password });
+      console.log('Response:', response.data);
+      if (response.data.token) {
+        localStorage.setItem('token', response.data.token);
+        navigate('/home');
+      }
     } catch (error) {
-      alert('Login failed');
+      console.error('Login failed', error);
     }
   };
 
@@ -51,7 +57,7 @@ const LoginPage: React.FC = () => {
             type="submit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
-            Sign In
+            Login
           </button>
         </div>
       </form>

@@ -8,6 +8,7 @@
         "phone_number": "+41 79 222 33 44",
         "profession": "Administrator",
         "password": "adminpassword",
+        "token": "admin-token",
         "image_profile": "admin_profile.jpg"
       },
       {
@@ -18,6 +19,7 @@
         "phone_number": "+41 79 333 44 55",
         "profession": "Employee",
         "password": "userpassword",
+        "token": "user-token",
         "image_profile": "user_profile.jpg"
       }
     ],
