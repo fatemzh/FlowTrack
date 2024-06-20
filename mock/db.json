@@ -1,0 +1,203 @@
+{
+    "loginUsers": [
+      {
+        "id": 1,
+        "firstname": "Admin",
+        "lastname": "User",
+        "email": "admin@example.com",
+        "phone_number": "+41 79 222 33 44",
+        "profession": "Administrator",
+        "password": "adminpassword",
+        "image_profile": "admin_profile.jpg"
+      },
+      {
+        "id": 2,
+        "firstname": "Regular",
+        "lastname": "User",
+        "email": "user@example.com",
+        "phone_number": "+41 79 333 44 55",
+        "profession": "Employee",
+        "password": "userpassword",
+        "image_profile": "user_profile.jpg"
+      }
+    ],
+    "employees": [
+      {
+        "id": 1,
+        "firstname": "John",
+        "lastname": "Doe",
+        "birth_date": "1985-06-15",
+        "phone_number": "+41 79 123 45 67",
+        "email": "john.doe@example.com",
+        "profession": "Warehouse Worker",
+        "image_profile": "john_doe.jpg"
+      },
+      {
+        "id": 2,
+        "firstname": "Jane",
+        "lastname": "Smith",
+        "birth_date": "1990-09-25",
+        "phone_number": "+41 79 234 56 78",
+        "email": "jane.smith@example.com",
+        "profession": "Forklift Operator",
+        "image_profile": "jane_smith.jpg"
+      },
+      {
+        "id": 3,
+        "firstname": "Alice",
+        "lastname": "Johnson",
+        "birth_date": "1987-04-12",
+        "phone_number": "+41 79 345 67 89",
+        "email": "alice.johnson@example.com",
+        "profession": "Inventory Specialist",
+        "image_profile": "alice_johnson.jpg"
+      },
+      {
+        "id": 4,
+        "firstname": "Bob",
+        "lastname": "Brown",
+        "birth_date": "1980-11-30",
+        "phone_number": "+41 79 456 78 90",
+        "email": "bob.brown@example.com",
+        "profession": "Logistics Manager",
+        "image_profile": "bob_brown.jpg"
+      },
+      {
+        "id": 5,
+        "firstname": "Charlie",
+        "lastname": "Davis",
+        "birth_date": "1995-02-20",
+        "phone_number": "+41 79 567 89 01",
+        "email": "charlie.davis@example.com",
+        "profession": "Warehouse Worker",
+        "image_profile": "charlie_davis.jpg"
+      },
+      {
+        "id": 6,
+        "firstname": "Diana",
+        "lastname": "Miller",
+        "birth_date": "1982-07-14",
+        "phone_number": "+41 79 678 90 12",
+        "email": "diana.miller@example.com",
+        "profession": "Safety Officer",
+        "image_profile": "diana_miller.jpg"
+      },
+      {
+        "id": 7,
+        "firstname": "Eve",
+        "lastname": "Wilson",
+        "birth_date": "1988-12-05",
+        "phone_number": "+41 79 789 01 23",
+        "email": "eve.wilson@example.com",
+        "profession": "Forklift Operator",
+        "image_profile": "eve_wilson.jpg"
+      },
+      {
+        "id": 8,
+        "firstname": "Frank",
+        "lastname": "Garcia",
+        "birth_date": "1975-03-28",
+        "phone_number": "+41 79 890 12 34",
+        "email": "frank.garcia@example.com",
+        "profession": "Inventory Specialist",
+        "image_profile": "frank_garcia.jpg"
+      },
+      {
+        "id": 9,
+        "firstname": "Grace",
+        "lastname": "Martinez",
+        "birth_date": "1992-10-16",
+        "phone_number": "+41 79 901 23 45",
+        "email": "grace.martinez@example.com",
+        "profession": "Warehouse Worker",
+        "image_profile": "grace_martinez.jpg"
+      },
+      {
+        "id": 10,
+        "firstname": "Henry",
+        "lastname": "Lopez",
+        "birth_date": "1983-05-22",
+        "phone_number": "+41 79 012 34 56",
+        "email": "henry.lopez@example.com",
+        "profession": "Safety Officer",
+        "image_profile": "henry_lopez.jpg"
+      }
+    ],
+    "professions": [
+      { "id": 1, "name": "Warehouse Worker" },
+      { "id": 2, "name": "Forklift Operator" },
+      { "id": 3, "name": "Inventory Specialist" },
+      { "id": 4, "name": "Logistics Manager" },
+      { "id": 5, "name": "Safety Officer" }
+    ],
+    "groups": [
+      { "id": 1, "name": "Group A", "color": "#ff0000" },
+      { "id": 2, "name": "Group B", "color": "#00ff00" },
+      { "id": 3, "name": "Group C", "color": "#0000ff" },
+      { "id": 4, "name": "Group D", "color": "#ffff00" },
+      { "id": 5, "name": "Group E", "color": "#ff00ff" }
+    ],
+    "schedules": [
+      {
+        "id": 1,
+        "group_id": 1,
+        "start_time": "2024-06-20T08:00:00+00:00",
+        "end_time": "2024-06-20T12:00:00+00:00"
+      },
+      {
+        "id": 2,
+        "group_id": 2,
+        "start_time": "2024-06-21T13:00:00+00:00",
+        "end_time": "2024-06-21T17:00:00+00:00"
+      },
+      {
+        "id": 3,
+        "group_id": 3,
+        "start_time": "2024-06-22T18:00:00+00:00",
+        "end_time": "2024-06-22T22:00:00+00:00"
+      },
+      {
+        "id": 4,
+        "group_id": 4,
+        "start_time": "2024-06-23T08:00:00+00:00",
+        "end_time": "2024-06-23T12:00:00+00:00"
+      },
+      {
+        "id": 5,
+        "group_id": 5,
+        "start_time": "2024-06-24T13:00:00+00:00",
+        "end_time": "2024-06-24T17:00:00+00:00"
+      },
+      {
+        "id": 6,
+        "group_id": 1,
+        "start_time": "2024-06-25T18:00:00+00:00",
+        "end_time": "2024-06-25T22:00:00+00:00"
+      },
+      {
+        "id": 7,
+        "group_id": 2,
+        "start_time": "2024-06-26T08:00:00+00:00",
+        "end_time": "2024-06-26T12:00:00+00:00"
+      },
+      {
+        "id": 8,
+        "group_id": 3,
+        "start_time": "2024-06-27T13:00:00+00:00",
+        "end_time": "2024-06-27T17:00:00+00:00"
+      },
+      {
+        "id": 9,
+        "group_id": 4,
+        "start_time": "2024-06-28T18:00:00+00:00",
+        "end_time": "2024-06-28T22:00:00+00:00"
+      },
+      {
+        "id": 10,
+        "group_id": 5,
+        "start_time": "2024-06-29T08:00:00+00:00",
+        "end_time": "2024-06-29T12:00:00+00:00"
+      }
+    ]
+  }
+  
