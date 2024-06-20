@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
-import App from '../App';
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/Home.tsx';
+import ProfilePage from '../pages/Profile.tsx';
 // import ProtectedRoute from '../components/utils/ProtectedRoute';
 // import NotFound from '../pages/NotFound';
 // import UsersList from '../pages/users/UsersList';
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <LoginPage />,
+  },
+  {
+    path: '/profile',
+    element: <ProfilePage />,
   },
   // Future routes
   // {

@@ -65,9 +65,11 @@ export default {
       }),
     },
   },
-  plugins: ['@tailwindcss/forms',
-            "tailwindcss-animate", 
-            "tailwindcss/typography",
-            "tailwindcss",
-            "autoprefixer"],
+  plugins: [
+    '@tailwindcss/forms',
+    'tailwindcss-animate',
+    '@tailwindcss/typography',
+    'tailwindcss',
+    'autoprefixer',
+  ],
 };
