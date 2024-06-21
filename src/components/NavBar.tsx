@@ -16,11 +16,11 @@ const NavBar = () => {
 
   return (
     <div className="flex items-center bg-emerald-100 bg-opacity-60 backdrop-filter backdrop-blur-lg fixed top-0 w-full z-40 h-[70px]">
-      <div className="container mx-auto flex justify-between items-center p-2">
+      <div className="container mx-auto flex justify-between items-center">
         <div
-          className="text-3xl font-bold cursor-pointer ml-12"
-          onClick={() => navigate("/")}
-        >
+          className="text-3xl font-bold cursor-pointer"
+          onClick={() => navigate("/home")}
+          >
           FlowTrack
         </div>
         <nav className="flex-1">
@@ -29,47 +29,47 @@ const NavBar = () => {
               <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
-                  href="#Hero"
+                  onClick={() => navigate("/home")}
                 >
                   Home
                 </a>
               </li>
-              <li className="mx-6 border-r border-gray-300 last:border-none">
+              <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
-                  href="#Skills"
-                >
+                  onClick={() => navigate("/about")}
+                  >
                   About us
                 </a>
               </li>
-              <li className="mx-6 border-r border-gray-300 last:border-none">
+              <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
-                  href="#Skills"
+                  onClick={() => navigate("/users")}
                 >
                   Workers
                 </a>
               </li>
-              <li className="mx-6 border-r border-gray-300 last:border-none">
+              <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
-                  href="#Skills"
+                  onClick={() => navigate("/teams")}
                 >
                   Teams
                 </a>
               </li>
-              <li className="mx-6 border-r border-gray-300 last:border-none">
+              <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
-                  href="#WorkExperience"
+                  onClick={() => navigate("/schedules")}
                 >
                   Schedules
                 </a>
               </li>
-              <li className="mx-6 border-r border-gray-300 last:border-none">
+              <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
-                  href="#Contact"
+                  onClick={() => navigate("/contact")}
                 >
                   Contact
                 </a>

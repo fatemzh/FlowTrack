@@ -2,18 +2,18 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/Home.tsx';
 import ProfilePage from '../pages/Profile.tsx';
-// import ProtectedRoute from '../components/utils/ProtectedRoute';
-// import NotFound from '../pages/NotFound';
-// import UsersList from '../pages/users/UsersList';
-// import AddUser from '../pages/users/AddUser';
-// import EditUser from '../pages/users/EditUser';
-// import ViewUser from '../pages/users/ViewUser';
-// import GroupsList from '../pages/groups/GroupsList';
-// import ViewGroup from '../pages/groups/ViewGroup';
-// import AddGroup from '../pages/groups/AddGroup';
-// import EditGroup from '../pages/groups/EditGroup';
-// import WishesList from '../pages/wishes/WishesList';
-// import ScheduleList from '../pages/schedules/SchedulesList';
+import AboutPage from '../pages/About.tsx';
+import ProtectedRoute from '../components/utils/ProtectedRoute';
+import NotFound from '../pages/NotFound';
+import UsersList from '../pages/users/UsersList';
+import AddUser from '../pages/users/AddUser';
+import EditUser from '../pages/users/EditUser';
+import ViewUser from '../pages/users/ViewUser';
+import GroupsList from '../pages/groups/GroupsList';
+import ViewGroup from '../pages/groups/ViewGroup';
+import AddGroup from '../pages/groups/AddGroup';
+import EditGroup from '../pages/groups/EditGroup';
+import ScheduleList from '../pages/schedules/SchedulesList';
 
 const router = createBrowserRouter([
   {
@@ -32,47 +32,47 @@ const router = createBrowserRouter([
     path: '/profile',
     element: <ProfilePage />,
   },
-  // Future routes
-  // {
-  //   path: '/peoples',
-  //   element: <UsersList />,
-  // },
-  // {
-  //   path: '/addUser',
-  //   element: <AddUser />,
-  // },
-  // {
-  //   path: '/editUsers/:id',
-  //   element: <EditUser />,
-  // },
-  // {
-  //   path: '/peoples/:id',
-  //   element: <ViewUser />,
-  // },
-  // {
-  //   path: '/groups',
-  //   element: <GroupsList />,
-  // },
-  // {
-  //   path: '/groups/:id',
-  //   element: <ViewGroup />,
-  // },
-  // {
-  //   path: '/addGroup',
-  //   element: <AddGroup />,
-  // },
-  // {
-  //   path: '/editGroup/:id',
-  //   element: <EditGroup />,
-  // },
-  // {
-  //   path: '/wishesList',
-  //   element: <WishesList />,
-  // },
-  // {
-  //   path: '/schedules',
-  //   element: <ScheduleList />,
-  // },
+  {
+    path: '/about',
+    element: <AboutPage />,
+  },
+  {
+    path: '/users',
+    element: <UsersList />,
+  },
+  {
+    path: '/teams',
+    element: <GroupsList />,
+  },
+  {
+    path: '/addUser',
+    element: <AddUser />,
+  },
+  {
+    path: '/editUsers/:id',
+    element: <EditUser />,
+  },
+  {
+    path: '/peoples/:id',
+    element: <ViewUser />,
+  },
+  
+  {
+    path: '/groups/:id',
+    element: <ViewGroup />,
+  },
+  {
+    path: '/addGroup',
+    element: <AddGroup />,
+  },
+  {
+    path: '/editGroup/:id',
+    element: <EditGroup />,
+  },
+  {
+    path: '/schedules',
+    element: <ScheduleList />,
+  },
   // {
   //   path: '*',
   //   element: <NotFound />,
