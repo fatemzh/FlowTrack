@@ -26,7 +26,7 @@ const NavBar = () => {
         <nav className="flex-1">
           <div className="flex justify-end items-center space-x-4">
             <ul className="hidden md:flex items-center space-x-4 list-none">
-              <li className="mx-6">
+              <li className="mx-6 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
                   href="#Hero"
@@ -34,7 +34,7 @@ const NavBar = () => {
                   Home
                 </a>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 border-r border-gray-300 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
                   href="#Skills"
@@ -42,7 +42,7 @@ const NavBar = () => {
                   About us
                 </a>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 border-r border-gray-300 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
                   href="#Skills"
@@ -50,15 +50,15 @@ const NavBar = () => {
                   Workers
                 </a>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 border-r border-gray-300 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
                   href="#Skills"
                 >
-                  Groups
+                  Teams
                 </a>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 border-r border-gray-300 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
                   href="#WorkExperience"
@@ -66,7 +66,7 @@ const NavBar = () => {
                   Schedules
                 </a>
               </li>
-              <li className="mx-6">
+              <li className="mx-6 border-r border-gray-300 last:border-none">
                 <a
                   className="relative text-sm font-medium text-gray-800 cursor-pointer hover:before:w-full hover:before:transform hover:before:translate-x-0 hover:before:opacity-100 before:content-[''] before:w-8 before:h-1 before:bg-green-500 before:rounded before:absolute before:bottom-[-0.6rem] before:opacity-0 before:transition-all before:duration-300 before:ease-in-out before:transform before:translate-x-[-1.5rem]"
                   href="#Contact"
