@@ -4,29 +4,35 @@ import heroImage from "../assets/hero.png";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="container mx-auto min-h-screen flex flex-col">
       <NavBar />
-      <main className="container mx-auto flex-grow flex flex-col justify-center items-center text-center py-20 md:py-32">
-        <div className="bg-white/30 backdrop-blur-lg shadow-lg rounded-lg md:p-10 flex flex-row">
-          <div className="mr-4">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+      <main className="flex flex-grow justify-center items-center text-center md:py-32">
+        <div className="flex flex-row items-center">
+          <div className="w-[500px] h-[500px] flex flex-col justify-evenly text-left">
+            <h1 className="text-5xl font-bold text-gray-800">
               Simplify Volunteer Management for Effective Assistance
             </h1>
-            <p className="text-lg md:text-2xl text-gray-600 mb-10">
-              An all-in-one solution to organize volunteers and improve the
-              lives of disabled individuals
+            <p className="text-lg text-gray-600 mb-10">
+              An all-in-one solution to organize volunteers and improve the lives of disabled individuals
             </p>
-            <button className="bg-green-600 text-white py-2 px-6 rounded-lg text-lg hover:bg-green-700 transition duration-300">
-              Discover Our Solution
-            </button>
+            <div className="flex flex-row">
+              <a className="w-auto m-1 cursor-pointer bg-teal-600 text-white py-2 px-6 rounded-lg text-lg hover:bg-teal-800 transition duration-300">
+                Discover Our Solution
+              </a>
+              <a className="m-1 bg-indigo-600 cursor-pointer text-white py-2 px-6 rounded-lg text-lg hover:bg-indigo-300 transition duration-300">
+                Contact Us
+              </a>              
+            </div>
           </div>
-          <img
-            src={heroImage}
-            alt="Stock image of a young women in a wheelchair talking with another woman next to her"
-          />
+          <div >
+            <img
+              src={heroImage}
+              alt="Stock image of a young women in a wheelchair talking with another woman next to her"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
         </div>
       </main>
-
       <section id="features" className="py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Features</h2>
